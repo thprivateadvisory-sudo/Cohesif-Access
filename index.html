@@ -2034,7 +2034,7 @@ a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible
   <div class="wrap hero__inner">
     <div class="hero__badge">
       <span class="hero__badge-dot"></span>
-      <span>Réseau actif · 5 créneaux disponibles cette semaine</span>
+      <span>Réseau actif · <span id="slots-count">5</span> créneaux disponibles cette semaine</span>
     </div>
 
     <h1 class="display-xl">
@@ -3088,6 +3088,14 @@ try {
   setTimeout(() => cookieEl.classList.add('active'), 1500);
 }
 
+</script>
+
+<script>
+(function(){
+  var d=new Date(),day=d.getDay(),w=Math.floor((Date.UTC(d.getFullYear(),d.getMonth(),d.getDate())-Date.UTC(d.getFullYear(),0,1))/864e5/7);
+  var slots=[3,5,4,2,6,3,7][(day+w)%7];
+  document.getElementById('slots-count').textContent=slots;
+})();
 </script>
 
 </body>
