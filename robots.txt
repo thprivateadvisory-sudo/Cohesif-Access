@@ -1,0 +1,30 @@
+# Cohesif Access — robots.txt
+User-agent: *
+Allow: /
+
+Sitemap: https://cohesifaccess.fr/sitemap.xml
+
+# Autoriser tous les crawlers importants
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: facebookexternalhit
+Allow: /
+
+User-agent: Twitterbot
+Allow: /
+
+User-agent: LinkedInBot
+Allow: /
+
+User-agent: WhatsApp
+Allow: /
+
+User-agent: TelegramBot
+Allow: /
+
+User-agent: Slackbot
+Allow: /
