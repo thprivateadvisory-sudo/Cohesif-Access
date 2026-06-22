@@ -2,7 +2,7 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://cohesifaccess.fr/sitemap.xml
+Sitemap: https://www.cohesifaccess.fr/sitemap.xml
 
 # Autoriser tous les crawlers importants
 User-agent: Googlebot
