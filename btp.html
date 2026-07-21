@@ -220,13 +220,17 @@ em { font-style: italic; }
 }
 @media (max-width: 820px) { .nav__links a:not(.nav__cta):not(.nav__pole) { display: none; } }
 .nav__pole {
-  font-size: 0.8125rem;
+  font-size: 0.75rem;
   font-weight: 600;
   color: var(--accent) !important;
   background: var(--accent-soft) !important;
   border: 1px solid rgba(39,86,230,0.18);
-  padding: 0.375rem 0.75rem !important;
+  padding: 0.25rem 0.6rem !important;
   border-radius: 20px !important;
+  white-space: nowrap;
+}
+@media (max-width: 820px) {
+  .nav__pole { font-size: 0.6875rem; padding: 0.2rem 0.5rem !important; }
 }
 
 /* ── Boutons ── */
@@ -768,7 +772,7 @@ em { font-style: italic; }
       <a href="#secteurs">Secteurs</a>
       <a href="#chantiers">Exemples</a>
       <a href="#faq">FAQ</a>
-      <a href="/" class="nav__pole">← Pôle Immobilier</a>
+      <a href="/" class="nav__pole">← Immobilier</a>
       <button class="nav__cta" id="nav-cta">Candidater →</button>
     </nav>
   </div>
