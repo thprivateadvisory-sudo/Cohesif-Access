@@ -596,6 +596,71 @@ strong { font-weight: 600; color: var(--ink-900); }
 @media (max-width: 820px) {
   .nav__links a:not(.nav__cta) { display: none; }
 }
+/* ── Pôles switcher ── */
+.poles { padding: clamp(3rem, 6vw, 5rem) 0; background: var(--bg); }
+.poles__label { margin-bottom: 1.5rem; }
+.poles__grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+.pole {
+  border-radius: 14px;
+  padding: clamp(1.5rem, 3vw, 2rem);
+  background: var(--white);
+  display: flex;
+  flex-direction: column;
+}
+.pole--immo {
+  border: 2px solid var(--accent);
+}
+.pole--btp {
+  border: 1px solid var(--line);
+  text-decoration: none;
+  color: inherit;
+  transition: border-color 0.2s var(--ease), box-shadow 0.2s var(--ease);
+}
+.pole--btp:hover {
+  border-color: #1e3d2c;
+  box-shadow: 0 8px 24px rgba(30, 61, 44, 0.1);
+}
+.pole__tag {
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.07em;
+  margin-bottom: 1rem;
+}
+.pole__tag--immo { color: var(--accent); }
+.pole__tag--btp { color: #1e3d2c; }
+.pole__title {
+  font-size: clamp(1.125rem, 2vw, 1.5rem);
+  font-weight: 600;
+  letter-spacing: -0.025em;
+  color: var(--ink-900);
+  line-height: 1.25;
+  margin-bottom: 0.75rem;
+}
+.pole__desc {
+  font-size: 0.9375rem;
+  color: var(--ink-500);
+  line-height: 1.55;
+  flex: 1;
+  margin-bottom: 1.5rem;
+}
+.pole__cta {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.375rem;
+  font-size: 0.875rem;
+  font-weight: 600;
+  margin-top: auto;
+}
+.pole__cta--immo { color: var(--accent); }
+.pole__cta--btp { color: #1e3d2c; }
+@media (max-width: 600px) {
+  .poles__grid { grid-template-columns: 1fr; }
+}
 
 /* ═══════════════════════════════════════════════════════════════
    BOUTONS
@@ -2833,6 +2898,36 @@ a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible
         <summary class="faq__q">Pourquoi refuser 70 % des candidats au Cercle ? <span class="faq__toggle">+</span></summary>
         <div class="faq__a">Parce qu'un mauvais apporteur détruit la confiance construite avec les vendeurs, les acheteurs, les partenaires. La sélection porte sur le sérieux, la capacité d'exécution, la compatibilité. <strong>Un Cercle de qualité vaut mieux qu'un club bondé.</strong></div>
       </details>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════ PÔLES ═══════════ -->
+<section class="poles" id="poles">
+  <div class="wrap">
+    <div class="eyebrow poles__label">Groupe Cohesif · Deux pôles</div>
+    <div class="poles__grid">
+
+      <div class="pole pole--immo">
+        <div class="pole__tag pole__tag--immo">Actif · Pôle Immobilier</div>
+        <h3 class="pole__title">Deals off-market.<br>Commissions 5 000 € – 40 000 €.</h3>
+        <p class="pole__desc">Accès au circuit privé de transactions immobilières — vendeurs qualifiés, acheteurs actifs, commissions sur chaque deal signé.</p>
+        <span class="pole__cta pole__cta--immo">
+          Vous êtes ici
+          <svg width="14" height="14" viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="2"><circle cx="7" cy="7" r="5"/><circle cx="7" cy="7" r="2" fill="currentColor" stroke="none"/></svg>
+        </span>
+      </div>
+
+      <a href="/btp.html" class="pole pole--btp">
+        <div class="pole__tag pole__tag--btp">Nouveau · Pôle BTP</div>
+        <h3 class="pole__title">Chantiers qualifiés.<br>Commissions au dossier.</h3>
+        <p class="pole__desc">Réseau privé d'apporteurs d'affaires BTP — rénovation énergétique, second œuvre, réhabilitation. Commissions négociées avant chaque mise en relation.</p>
+        <span class="pole__cta pole__cta--btp">
+          Découvrir le pôle BTP
+          <svg width="14" height="14" viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 7h8M8 4l3 3-3 3" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </span>
+      </a>
+
     </div>
   </div>
 </section>
