@@ -597,13 +597,17 @@ strong { font-weight: 600; color: var(--ink-900); }
   .nav__links a:not(.nav__cta):not(.nav__pole) { display: none; }
 }
 .nav__pole {
-  font-size: 0.8125rem;
+  font-size: 0.75rem;
   font-weight: 600;
   color: var(--accent) !important;
   background: var(--accent-soft) !important;
   border: 1px solid rgba(39,86,230,0.18);
-  padding: 0.375rem 0.75rem !important;
+  padding: 0.25rem 0.6rem !important;
   border-radius: 20px !important;
+  white-space: nowrap;
+}
+@media (max-width: 820px) {
+  .nav__pole { font-size: 0.6875rem; padding: 0.2rem 0.5rem !important; }
 }
 /* ── Pôles switcher ── */
 .poles { padding: clamp(3rem, 6vw, 5rem) 0; background: var(--bg); }
@@ -2370,7 +2374,7 @@ a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible
       <a href="#levels">Tarifs</a>
       <a href="#deals">Opportunités</a>
       <a href="#faq">FAQ</a>
-      <a href="/btp.html" class="nav__pole">Pôle BTP →</a>
+      <a href="/btp.html" class="nav__pole">BTP →</a>
       <button class="nav__cta" data-open-modal="appel">Candidater →</button>
     </nav>
   </div>
