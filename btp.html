@@ -1,0 +1,1255 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="color-scheme" content="light only" />
+<meta name="supported-color-schemes" content="light" />
+<meta name="theme-color" content="#2756e6" />
+
+<title>Cohesif Access BTP — Réseau Privé d'Apporteurs d'Affaires BTP & Construction</title>
+<meta name="description" content="Rejoignez le réseau privé d'apporteurs d'affaires BTP Cohesif Access. Apportez des chantiers qualifiés à des entreprises sélectionnées. Commissions négociées selon la taille du chantier. Sur candidature." />
+<meta name="author" content="Thomas Hoenig — Groupe Cohesif" />
+<meta name="keywords" content="apport d'affaires BTP, apporteur d'affaires construction, réseau BTP privé, commission BTP, chantier off-market, rénovation énergétique, Thomas Hoenig, Cohesif Access BTP, Groupe Cohesif, marchés BTP, sous-traitance BTP" />
+<meta name="robots" content="index, follow" />
+<link rel="canonical" href="https://www.cohesifaccess.fr/btp" />
+
+<meta property="og:type" content="website" />
+<meta property="og:site_name" content="Cohesif Access" />
+<meta property="og:title" content="Cohesif Access BTP — Réseau Privé d'Apporteurs d'Affaires BTP" />
+<meta property="og:description" content="Apportez des chantiers qualifiés. Commissions négociées selon la taille du projet. Réseau privé BTP sur candidature." />
+<meta property="og:url" content="https://www.cohesifaccess.fr/btp" />
+<meta property="og:image" content="https://www.cohesifaccess.fr/og-image.jpg" />
+<meta property="og:locale" content="fr_FR" />
+
+<link rel="icon" type="image/x-icon" href="favicon.ico">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+<link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+<link rel="manifest" href="manifest.json">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" as="style">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+/* ═══════════════════════════════════════════════════════════════
+   COHESIF ACCESS BTP · Design system — même ADN qu'immobilier
+   ═══════════════════════════════════════════════════════════════ */
+
+:root {
+  --white: #ffffff;
+  --bg: #fbfbfd;
+  --bg-soft: #f5f6f8;
+  --bg-blue: #f0f4ff;
+
+  --ink-900: #0a0e1a;
+  --ink-700: #30384a;
+  --ink-500: #5b6474;
+  --ink-400: #8089a0;
+  --ink-300: #aab1c2;
+
+  --line: #e8eaee;
+  --line-soft: #eef0f3;
+
+  --accent: #2756e6;
+  --accent-dark: #1d42b8;
+  --accent-soft: #edf2ff;
+
+  --btp: #e36b1a;
+  --btp-dark: #c45a10;
+  --btp-soft: #fff4ec;
+
+  --sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  --pad: clamp(1.25rem, 4vw, 3rem);
+  --max: 1200px;
+  --r-sm: 6px;
+  --r: 10px;
+  --r-lg: 14px;
+  --r-xl: 20px;
+
+  --shadow-xs: 0 1px 2px rgba(16, 24, 40, 0.04);
+  --shadow-sm: 0 1px 3px rgba(16, 24, 40, 0.06), 0 1px 2px rgba(16, 24, 40, 0.04);
+  --shadow-md: 0 4px 12px rgba(16, 24, 40, 0.06), 0 2px 4px rgba(16, 24, 40, 0.04);
+  --shadow-lg: 0 12px 32px rgba(16, 24, 40, 0.08), 0 4px 8px rgba(16, 24, 40, 0.04);
+  --shadow-xl: 0 24px 48px -12px rgba(16, 24, 40, 0.12), 0 8px 16px rgba(16, 24, 40, 0.06);
+
+  --ease: cubic-bezier(0.22, 0.61, 0.36, 1);
+  --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+html {
+  scroll-behavior: smooth;
+  -webkit-text-size-adjust: 100%;
+  font-size: 16px;
+  color-scheme: light;
+  background: var(--white);
+}
+
+body {
+  background: var(--white) !important;
+  color: var(--ink-900);
+  font-family: var(--sans);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+}
+
+@media (prefers-color-scheme: dark) {
+  html, body { background: var(--white) !important; color: var(--ink-900) !important; }
+  :root { color-scheme: light; }
+}
+
+::selection { background: var(--accent); color: var(--white); }
+
+a { color: inherit; text-decoration: none; }
+button { font-family: inherit; background: none; border: none; cursor: pointer; color: inherit; padding: 0; font-size: inherit; }
+input, textarea, select { font-family: inherit; }
+img, svg { display: block; max-width: 100%; }
+
+.wrap { max-width: var(--max); margin: 0 auto; padding: 0 var(--pad); }
+.wrap-sm { max-width: 920px; margin: 0 auto; padding: 0 var(--pad); }
+
+/* ── Typographie ── */
+.display-xl {
+  font-size: clamp(2.25rem, 5.5vw, 4.5rem);
+  font-weight: 600;
+  line-height: 1.05;
+  letter-spacing: -0.035em;
+  color: var(--ink-900);
+}
+.display-l {
+  font-size: clamp(1.875rem, 3.75vw, 3rem);
+  font-weight: 600;
+  line-height: 1.1;
+  letter-spacing: -0.03em;
+  color: var(--ink-900);
+}
+.display-m {
+  font-size: clamp(1.5rem, 2.5vw, 2rem);
+  font-weight: 600;
+  line-height: 1.2;
+  letter-spacing: -0.025em;
+  color: var(--ink-900);
+}
+.display-s {
+  font-size: clamp(1.25rem, 1.8vw, 1.5rem);
+  font-weight: 600;
+  line-height: 1.3;
+  letter-spacing: -0.02em;
+  color: var(--ink-900);
+}
+.eyebrow {
+  font-size: 0.8125rem;
+  font-weight: 500;
+  letter-spacing: 0.01em;
+  color: var(--accent);
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.eyebrow::before {
+  content: "";
+  width: 16px;
+  height: 1.5px;
+  background: var(--accent);
+  border-radius: 2px;
+}
+.eyebrow--btp { color: var(--btp); }
+.eyebrow--btp::before { background: var(--btp); }
+
+.lede { font-size: clamp(1.0625rem, 1.3vw, 1.25rem); line-height: 1.6; color: var(--ink-700); }
+.body-l { font-size: 1.0625rem; line-height: 1.6; color: var(--ink-700); }
+.body-m { font-size: 0.9375rem; line-height: 1.55; color: var(--ink-500); }
+.body-s { font-size: 0.8125rem; line-height: 1.5; color: var(--ink-500); }
+strong { font-weight: 600; color: var(--ink-900); }
+
+/* ── Navigation ── */
+.nav {
+  position: fixed;
+  top: 0; left: 0; right: 0;
+  z-index: 80;
+  background: rgba(255, 255, 255, 0.72);
+  backdrop-filter: saturate(160%) blur(14px);
+  -webkit-backdrop-filter: saturate(160%) blur(14px);
+  border-bottom: 1px solid transparent;
+  transition: border-color 0.3s var(--ease), background 0.3s var(--ease);
+}
+.nav.scrolled { border-bottom-color: var(--line); background: rgba(255, 255, 255, 0.88); }
+.nav__inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: var(--max);
+  margin: 0 auto;
+  padding: 1rem var(--pad);
+}
+.brand { display: inline-flex; align-items: center; gap: 0.625rem; color: var(--ink-900); transition: opacity 0.2s var(--ease); }
+.brand:hover { opacity: 0.75; }
+.brand__logo { height: 32px; width: auto; display: block; }
+.foot .brand__logo { height: 38px; }
+@media (max-width: 560px) { .brand__logo { height: 28px; } }
+
+.nav__links { display: flex; align-items: center; gap: 0.5rem; }
+.nav__links a {
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: var(--ink-500);
+  padding: 0.5rem 0.875rem;
+  border-radius: var(--r-sm);
+  transition: all 0.2s var(--ease);
+}
+.nav__links a:hover { color: var(--ink-900); background: var(--bg-soft); }
+.nav__pill {
+  font-size: 0.75rem;
+  font-weight: 600;
+  padding: 0.2rem 0.6rem;
+  border-radius: 20px;
+  background: var(--btp-soft);
+  color: var(--btp);
+  letter-spacing: 0.02em;
+  margin-left: -0.25rem;
+}
+.nav__cta {
+  color: var(--white) !important;
+  background: var(--accent);
+  padding: 0.5rem 1rem !important;
+  font-weight: 500;
+  margin-left: 0.5rem;
+  border-radius: var(--r-sm);
+  transition: all 0.2s var(--ease) !important;
+  box-shadow: 0 1px 2px rgba(39, 86, 230, 0.2);
+}
+.nav__cta:hover {
+  background: var(--accent-dark) !important;
+  color: var(--white) !important;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(39, 86, 230, 0.3);
+}
+@media (max-width: 820px) { .nav__links a:not(.nav__cta) { display: none; } }
+
+/* ── Boutons ── */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  font-size: 0.9375rem;
+  font-weight: 500;
+  letter-spacing: -0.005em;
+  padding: 0.75rem 1.25rem;
+  border-radius: var(--r-sm);
+  transition: all 0.2s var(--ease);
+  white-space: nowrap;
+  cursor: pointer;
+  line-height: 1.25;
+}
+.btn--primary {
+  background: var(--accent);
+  color: var(--white);
+  box-shadow: 0 1px 0 rgba(255,255,255,0.2) inset, 0 1px 2px rgba(39, 86, 230, 0.2);
+}
+.btn--primary:hover {
+  background: var(--accent-dark);
+  transform: translateY(-1px);
+  box-shadow: 0 1px 0 rgba(255,255,255,0.2) inset, 0 6px 16px rgba(39, 86, 230, 0.3);
+}
+.btn--btp {
+  background: var(--btp);
+  color: var(--white);
+  box-shadow: 0 1px 0 rgba(255,255,255,0.2) inset, 0 1px 2px rgba(227, 107, 26, 0.25);
+}
+.btn--btp:hover {
+  background: var(--btp-dark);
+  transform: translateY(-1px);
+  box-shadow: 0 1px 0 rgba(255,255,255,0.2) inset, 0 6px 16px rgba(227, 107, 26, 0.35);
+}
+.btn--ghost {
+  background: var(--white);
+  color: var(--ink-900);
+  border: 1px solid var(--line);
+  box-shadow: var(--shadow-xs);
+}
+.btn--ghost:hover { border-color: var(--ink-300); background: var(--bg-soft); transform: translateY(-1px); }
+.btn--lg { font-size: 1rem; padding: 0.875rem 1.625rem; }
+
+/* ── Sections ── */
+.section { padding: clamp(4rem, 8vw, 7rem) 0; }
+.section--bg { background: var(--bg); }
+.section__head { margin-bottom: clamp(2.5rem, 5vw, 4rem); }
+.section__head--center { text-align: center; }
+.section__head p { margin-top: 0.875rem; max-width: 56ch; }
+.section__head--center p { margin-left: auto; margin-right: auto; }
+
+/* ── Hero BTP ── */
+.hero {
+  padding: clamp(7rem, 14vw, 11rem) 0 clamp(4rem, 8vw, 7rem);
+  background: var(--white);
+  position: relative;
+  overflow: hidden;
+}
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(ellipse 80% 60% at 50% -10%, rgba(39, 86, 230, 0.06) 0%, transparent 70%);
+  pointer-events: none;
+}
+.hero__inner { position: relative; }
+.hero__badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: var(--btp-soft);
+  border: 1px solid rgba(227, 107, 26, 0.2);
+  border-radius: 20px;
+  padding: 0.3125rem 0.875rem;
+  font-size: 0.8125rem;
+  font-weight: 500;
+  color: var(--btp);
+  margin-bottom: 1.75rem;
+}
+.hero__badge-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--btp);
+  animation: pulse-btp 2s ease infinite;
+}
+@keyframes pulse-btp {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50% { opacity: 0.6; transform: scale(1.3); }
+}
+.hero__title { margin-bottom: 1.5rem; max-width: 18ch; }
+.hero__title em { font-style: normal; color: var(--accent); }
+.hero__lede { margin-bottom: 2.5rem; max-width: 52ch; }
+.hero__cta-row { display: flex; align-items: center; gap: 1rem; flex-wrap: wrap; }
+.hero__note { font-size: 0.8125rem; color: var(--ink-400); }
+
+/* ── Stats ── */
+.stats { border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); padding: clamp(2rem, 4vw, 3rem) 0; }
+.stats__grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap: 0; }
+.stats__item {
+  text-align: center;
+  padding: 1.5rem 1rem;
+  border-right: 1px solid var(--line);
+  position: relative;
+}
+.stats__item:last-child { border-right: none; }
+.stats__num {
+  font-size: clamp(1.75rem, 3vw, 2.5rem);
+  font-weight: 700;
+  letter-spacing: -0.04em;
+  color: var(--ink-900);
+  line-height: 1;
+  margin-bottom: 0.375rem;
+}
+.stats__num span { color: var(--accent); }
+.stats__label { font-size: 0.8125rem; color: var(--ink-500); font-weight: 500; }
+@media (max-width: 640px) {
+  .stats__grid { grid-template-columns: 1fr 1fr; }
+  .stats__item:nth-child(2) { border-right: none; }
+  .stats__item:nth-child(3) { border-right: 1px solid var(--line); border-top: 1px solid var(--line); }
+  .stats__item:nth-child(4) { border-right: none; border-top: 1px solid var(--line); }
+}
+
+/* ── Comment ça marche ── */
+.steps__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2px;
+  background: var(--line);
+  border: 1px solid var(--line);
+  border-radius: var(--r-lg);
+  overflow: hidden;
+}
+.step {
+  background: var(--white);
+  padding: clamp(1.75rem, 3vw, 2.5rem);
+  position: relative;
+}
+.step__num {
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  color: var(--btp);
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+}
+.step__icon {
+  width: 44px;
+  height: 44px;
+  border-radius: var(--r);
+  background: var(--bg-blue);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1.25rem;
+  font-size: 1.375rem;
+}
+.step h3 { margin-bottom: 0.5rem; }
+@media (max-width: 740px) { .steps__grid { grid-template-columns: 1fr; } }
+
+/* ── Secteurs ── */
+.sectors__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 1px;
+  background: var(--line);
+  border: 1px solid var(--line);
+  border-radius: var(--r-lg);
+  overflow: hidden;
+}
+.sector-card {
+  background: var(--white);
+  padding: 1.75rem;
+  transition: background 0.2s var(--ease);
+}
+.sector-card:hover { background: var(--bg); }
+.sector-card__icon { font-size: 1.5rem; margin-bottom: 1rem; }
+.sector-card h3 { font-size: 1rem; font-weight: 600; margin-bottom: 0.375rem; color: var(--ink-900); }
+.sector-card p { font-size: 0.875rem; color: var(--ink-500); line-height: 1.5; }
+.sector-card__tag {
+  display: inline-block;
+  font-size: 0.6875rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  padding: 0.2rem 0.55rem;
+  border-radius: 4px;
+  margin-bottom: 0.875rem;
+  background: var(--btp-soft);
+  color: var(--btp);
+}
+
+/* ── Valeur ── */
+.value__grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: clamp(2rem, 4vw, 4rem);
+  align-items: center;
+}
+.value__list { list-style: none; display: flex; flex-direction: column; gap: 1.25rem; margin-top: 1.75rem; }
+.value__item {
+  display: flex;
+  gap: 1rem;
+  align-items: flex-start;
+}
+.value__check {
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  background: var(--accent-soft);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  margin-top: 0.1rem;
+}
+.value__check svg { width: 12px; height: 12px; stroke: var(--accent); fill: none; stroke-width: 2.5; }
+.value__text strong { display: block; font-size: 0.9375rem; margin-bottom: 0.125rem; }
+.value__text p { font-size: 0.875rem; color: var(--ink-500); }
+.value__visual {
+  background: var(--bg);
+  border: 1px solid var(--line);
+  border-radius: var(--r-xl);
+  padding: 2rem;
+  box-shadow: var(--shadow-md);
+}
+.commission-box {
+  background: var(--white);
+  border: 1px solid var(--line);
+  border-radius: var(--r-lg);
+  padding: 1.5rem;
+  margin-bottom: 1rem;
+}
+.commission-box:last-child { margin-bottom: 0; }
+.commission-box__label { font-size: 0.75rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.06em; color: var(--ink-400); margin-bottom: 0.5rem; }
+.commission-box__range { font-size: 1.375rem; font-weight: 700; letter-spacing: -0.025em; color: var(--ink-900); }
+.commission-box__range span { color: var(--btp); }
+.commission-box__sub { font-size: 0.8125rem; color: var(--ink-500); margin-top: 0.25rem; }
+@media (max-width: 760px) {
+  .value__grid { grid-template-columns: 1fr; }
+  .value__visual { order: -1; }
+}
+
+/* ── Profil ── */
+.profiles__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 1rem;
+  margin-top: 2.5rem;
+}
+.profile-card {
+  border: 1px solid var(--line);
+  border-radius: var(--r-lg);
+  padding: 1.5rem;
+  background: var(--white);
+  box-shadow: var(--shadow-xs);
+  transition: all 0.2s var(--ease);
+}
+.profile-card:hover { box-shadow: var(--shadow-md); transform: translateY(-2px); }
+.profile-card__icon { font-size: 1.5rem; margin-bottom: 1rem; }
+.profile-card h3 { font-size: 0.9375rem; font-weight: 600; margin-bottom: 0.375rem; }
+.profile-card p { font-size: 0.875rem; color: var(--ink-500); line-height: 1.5; }
+
+/* ── FAQ ── */
+.faq__list { list-style: none; display: flex; flex-direction: column; gap: 0; border: 1px solid var(--line); border-radius: var(--r-lg); overflow: hidden; }
+.faq__item { border-bottom: 1px solid var(--line); }
+.faq__item:last-child { border-bottom: none; }
+.faq__q {
+  width: 100%;
+  text-align: left;
+  padding: 1.25rem 1.5rem;
+  font-size: 0.9375rem;
+  font-weight: 500;
+  color: var(--ink-900);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  background: var(--white);
+  transition: background 0.15s var(--ease);
+}
+.faq__q:hover { background: var(--bg-soft); }
+.faq__arrow { width: 16px; height: 16px; flex-shrink: 0; transition: transform 0.25s var(--ease); color: var(--ink-300); }
+.faq__item.open .faq__arrow { transform: rotate(180deg); color: var(--accent); }
+.faq__a {
+  font-size: 0.9375rem;
+  color: var(--ink-700);
+  line-height: 1.65;
+  padding: 0 1.5rem 1.25rem;
+  display: none;
+}
+.faq__item.open .faq__a { display: block; }
+
+/* ── CTA Final ── */
+.final {
+  background: var(--ink-900);
+  color: var(--white);
+  padding: clamp(4rem, 8vw, 7rem) 0;
+  position: relative;
+  overflow: hidden;
+}
+.final::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(ellipse 70% 80% at 50% 120%, rgba(39, 86, 230, 0.3) 0%, transparent 70%);
+  pointer-events: none;
+}
+.final__inner { position: relative; text-align: center; }
+.final__title { color: var(--white); margin-bottom: 1rem; }
+.final__sub { color: rgba(255,255,255,0.6); max-width: 52ch; margin: 0 auto 2.5rem; }
+.final__actions { display: flex; justify-content: center; align-items: center; gap: 1rem; flex-wrap: wrap; }
+
+/* ── Footer ── */
+.foot {
+  background: var(--bg);
+  border-top: 1px solid var(--line);
+  padding: clamp(2.5rem, 5vw, 4rem) 0 clamp(1.5rem, 3vw, 2.5rem);
+}
+.foot__grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  gap: 3rem;
+  padding-bottom: clamp(2rem, 4vw, 3rem);
+  border-bottom: 1px solid var(--line);
+  margin-bottom: 1.75rem;
+}
+.foot__brand p { font-size: 0.875rem; color: var(--ink-500); margin-top: 0.875rem; max-width: 32ch; line-height: 1.6; }
+.foot__col h4 { font-size: 0.8125rem; font-weight: 600; color: var(--ink-900); text-transform: uppercase; letter-spacing: 0.04em; margin-bottom: 1rem; }
+.foot__col ul { list-style: none; display: flex; flex-direction: column; gap: 0.625rem; }
+.foot__col li a { font-size: 0.875rem; color: var(--ink-500); transition: color 0.15s var(--ease); }
+.foot__col li a:hover { color: var(--ink-900); }
+.foot__bottom { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 0.75rem; }
+.foot__copy { font-size: 0.8125rem; color: var(--ink-400); }
+.foot__legal { display: flex; gap: 1.25rem; }
+.foot__legal a { font-size: 0.8125rem; color: var(--ink-400); transition: color 0.15s var(--ease); }
+.foot__legal a:hover { color: var(--ink-700); }
+@media (max-width: 760px) { .foot__grid { grid-template-columns: 1fr; gap: 2rem; } }
+
+/* ── Modal ── */
+.modal-overlay {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(10, 14, 26, 0.5);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  z-index: 200;
+  align-items: center;
+  justify-content: center;
+  padding: 1.5rem;
+}
+.modal-overlay.open { display: flex; }
+.modal {
+  background: var(--white);
+  border-radius: var(--r-xl);
+  width: 100%;
+  max-width: 520px;
+  max-height: 90vh;
+  overflow-y: auto;
+  padding: 2.25rem;
+  box-shadow: var(--shadow-xl);
+  position: relative;
+}
+.modal__close {
+  position: absolute;
+  top: 1.25rem;
+  right: 1.25rem;
+  width: 32px;
+  height: 32px;
+  border-radius: var(--r-sm);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--ink-400);
+  transition: all 0.15s var(--ease);
+  background: var(--bg-soft);
+}
+.modal__close:hover { background: var(--line); color: var(--ink-900); }
+.modal__eyebrow { font-size: 0.75rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.06em; color: var(--btp); margin-bottom: 0.5rem; }
+.modal__title { font-size: 1.375rem; font-weight: 600; letter-spacing: -0.02em; margin-bottom: 0.5rem; }
+.modal__sub { font-size: 0.875rem; color: var(--ink-500); line-height: 1.55; margin-bottom: 1.75rem; }
+
+/* ── Formulaire ── */
+.form-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 0.875rem; }
+.form-group { display: flex; flex-direction: column; gap: 0.375rem; }
+.form-group--full { grid-column: 1 / -1; }
+.form-group label { font-size: 0.8125rem; font-weight: 500; color: var(--ink-700); }
+.form-group input,
+.form-group select,
+.form-group textarea {
+  width: 100%;
+  border: 1px solid var(--line);
+  border-radius: var(--r-sm);
+  padding: 0.625rem 0.875rem;
+  font-size: 0.9375rem;
+  color: var(--ink-900);
+  background: var(--white);
+  transition: border-color 0.15s var(--ease), box-shadow 0.15s var(--ease);
+  outline: none;
+}
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+  border-color: var(--accent);
+  box-shadow: 0 0 0 3px rgba(39, 86, 230, 0.1);
+}
+.form-group textarea { resize: vertical; min-height: 90px; }
+.form-group select { appearance: none; background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath d='M1 1l5 5 5-5' stroke='%238089a0' stroke-width='1.5' fill='none' stroke-linecap='round'/%3E%3C/svg%3E"); background-repeat: no-repeat; background-position: right 0.875rem center; padding-right: 2.25rem; }
+.form-submit { margin-top: 1.25rem; width: 100%; }
+.form-cgv { display: flex; gap: 0.625rem; align-items: flex-start; margin-top: 0.875rem; font-size: 0.8125rem; color: var(--ink-500); }
+.form-cgv input[type="checkbox"] { margin-top: 0.125rem; flex-shrink: 0; accent-color: var(--accent); }
+.form-cgv a { color: var(--accent); }
+
+/* ── Confirm modal ── */
+.modal--confirm { text-align: center; padding: 3rem 2.5rem; }
+.modal--confirm .modal__icon { font-size: 3rem; margin-bottom: 1.25rem; }
+.modal--confirm h3 { font-size: 1.25rem; font-weight: 600; margin-bottom: 0.5rem; }
+.modal--confirm p { font-size: 0.9375rem; color: var(--ink-500); line-height: 1.6; max-width: 36ch; margin: 0 auto 1.75rem; }
+
+/* ── Cookie ── */
+.cookie {
+  display: none;
+  position: fixed;
+  bottom: 1.5rem;
+  left: 50%;
+  transform: translateX(-50%);
+  background: var(--ink-900);
+  color: var(--white);
+  border-radius: var(--r-lg);
+  padding: 1rem 1.5rem;
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+  z-index: 100;
+  box-shadow: var(--shadow-xl);
+  white-space: nowrap;
+  max-width: calc(100vw - 3rem);
+}
+.cookie p { font-size: 0.875rem; color: rgba(255,255,255,0.8); white-space: normal; }
+.cookie__accept { font-size: 0.8125rem; font-weight: 500; color: var(--white); background: var(--accent); padding: 0.4375rem 0.875rem; border-radius: var(--r-sm); transition: background 0.15s var(--ease); flex-shrink: 0; }
+.cookie__accept:hover { background: var(--accent-dark); }
+@media (max-width: 600px) { .cookie { flex-direction: column; align-items: flex-start; white-space: normal; } }
+</style>
+</head>
+<body>
+
+<!-- ═══════════ NAVIGATION ═══════════ -->
+<header class="nav" id="nav">
+  <div class="nav__inner">
+    <a href="/" class="brand">
+      <img src="logo.png" alt="Cohesif Access" class="brand__logo" />
+    </a>
+    <nav class="nav__links" aria-label="Navigation BTP">
+      <a href="#secteurs">Secteurs</a>
+      <a href="#valeur">Commissions</a>
+      <a href="#faq">FAQ</a>
+      <a href="/" style="color: var(--ink-400);">← Immobilier</a>
+      <button class="nav__cta" id="nav-cta">Candidater →</button>
+    </nav>
+  </div>
+</header>
+
+<main id="content" role="main">
+
+<!-- ═══════════ HERO ═══════════ -->
+<section class="hero">
+  <div class="wrap hero__inner">
+    <div class="hero__badge">
+      <span class="hero__badge-dot"></span>
+      <span>Pôle BTP · Réseau actif en France</span>
+    </div>
+    <h1 class="display-xl hero__title">
+      Apportez des chantiers.<br><em>Touchez des commissions.</em>
+    </h1>
+    <p class="lede hero__lede">
+      Cohesif Access BTP met en relation des apporteurs d'affaires sérieux avec des entreprises de construction et de rénovation sélectionnées. Vous détectez l'opportunité, nous faisons le reste.
+    </p>
+    <div class="hero__cta-row">
+      <button class="btn btn--btp btn--lg" id="hero-cta">Déposer ma candidature →</button>
+      <a href="#secteurs" class="btn btn--ghost btn--lg">Voir les secteurs</a>
+    </div>
+    <p class="hero__note" style="margin-top: 1.25rem;">Accès sur candidature · Sélection manuelle · Réponse sous 48 h</p>
+  </div>
+</section>
+
+<!-- ═══════════ STATS ═══════════ -->
+<section class="stats">
+  <div class="wrap">
+    <div class="stats__grid">
+      <div class="stats__item">
+        <div class="stats__num">6<span>+</span></div>
+        <div class="stats__label">Secteurs couverts</div>
+      </div>
+      <div class="stats__item">
+        <div class="stats__num"><span>100%</span></div>
+        <div class="stats__label">Contrats encadrés</div>
+      </div>
+      <div class="stats__item">
+        <div class="stats__num">0€</div>
+        <div class="stats__label">Investissement requis</div>
+      </div>
+      <div class="stats__item">
+        <div class="stats__num">48<span>h</span></div>
+        <div class="stats__label">Délai de réponse candidature</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════ COMMENT ÇA MARCHE ═══════════ -->
+<section class="section" id="fonctionnement">
+  <div class="wrap">
+    <div class="section__head section__head--center">
+      <span class="eyebrow">Fonctionnement</span>
+      <h2 class="display-l" style="margin-top: 0.75rem;">Simple. Structuré. Rémunéré.</h2>
+      <p class="lede">Pas d'improvisation — un processus clair du premier contact au virement de commission.</p>
+    </div>
+    <div class="steps__grid">
+      <div class="step">
+        <div class="step__num">Étape 01</div>
+        <div class="step__icon">🔍</div>
+        <h3 class="display-s">Vous détectez</h3>
+        <p class="body-m" style="margin-top: 0.5rem;">Un particulier qui veut rénover, une copropriété en travaux, un promoteur qui cherche un sous-traitant. Vous identifiez le besoin — et vous nous le transmettez.</p>
+      </div>
+      <div class="step">
+        <div class="step__num">Étape 02</div>
+        <div class="step__icon">🤝</div>
+        <h3 class="display-s">On prend le relais</h3>
+        <p class="body-m" style="margin-top: 0.5rem;">Cohesif Access qualifie le contact, l'oriente vers l'entreprise partenaire adaptée, et suit le dossier jusqu'à la signature du chantier.</p>
+      </div>
+      <div class="step">
+        <div class="step__num">Étape 03</div>
+        <div class="step__icon">💶</div>
+        <h3 class="display-s">Vous êtes payé</h3>
+        <p class="body-m" style="margin-top: 0.5rem;">Dès que le chantier est signé, votre commission est calculée et versée conformément au contrat d'apporteur d'affaires signé en amont. Transparent, légal, sans surprise.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════ SECTEURS ═══════════ -->
+<section class="section section--bg" id="secteurs">
+  <div class="wrap">
+    <div class="section__head">
+      <span class="eyebrow--btp eyebrow">Secteurs</span>
+      <h2 class="display-l" style="margin-top: 0.75rem;">Les chantiers que<br>nous traitons</h2>
+      <p class="lede">Du gros œuvre à la rénovation énergétique — chaque secteur a ses entreprises partenaires et ses opportunités.</p>
+    </div>
+    <div class="sectors__grid">
+      <div class="sector-card">
+        <div class="sector-card__tag">Porteur</div>
+        <div class="sector-card__icon">🏗️</div>
+        <h3>Gros œuvre</h3>
+        <p>Construction, maçonnerie, béton armé, fondations. Chantiers résidentiels et tertiaires.</p>
+      </div>
+      <div class="sector-card">
+        <div class="sector-card__tag">Porteur</div>
+        <div class="sector-card__icon">⚡</div>
+        <h3>Second œuvre</h3>
+        <p>Électricité, plomberie, menuiserie, peinture, carrelage. Volume élevé, cycles courts.</p>
+      </div>
+      <div class="sector-card">
+        <div class="sector-card__tag">Très actif</div>
+        <div class="sector-card__icon">🌿</div>
+        <h3>Rénovation énergétique</h3>
+        <p>Isolation, pompes à chaleur, VMC, menuiseries. Marché porté par MaPrimeRénov' et les CEE.</p>
+      </div>
+      <div class="sector-card">
+        <div class="sector-card__tag">Porteur</div>
+        <div class="sector-card__icon">🏢</div>
+        <h3>Réhabilitation</h3>
+        <p>Rénovation lourde d'immeubles anciens, mise aux normes, restructuration de bâtiments tertiaires.</p>
+      </div>
+      <div class="sector-card">
+        <div class="sector-card__tag">Niche</div>
+        <div class="sector-card__icon">🔧</div>
+        <h3>Maintenance & Entretien</h3>
+        <p>Contrats de maintenance pour copropriétés, bailleurs sociaux, collectivités. Récurrent et fidélisant.</p>
+      </div>
+      <div class="sector-card">
+        <div class="sector-card__tag">Niche</div>
+        <div class="sector-card__icon">🏭</div>
+        <h3>Marchés industriels</h3>
+        <p>Usines, entrepôts, plateformes logistiques. Chantiers à fort volume et commissions significatives.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════ VALEUR & COMMISSIONS ═══════════ -->
+<section class="section" id="valeur">
+  <div class="wrap">
+    <div class="value__grid">
+      <div>
+        <span class="eyebrow">Ce que vous gagnez</span>
+        <h2 class="display-l" style="margin-top: 0.75rem;">Des commissions à la hauteur des chantiers.</h2>
+        <ul class="value__list">
+          <li class="value__item">
+            <div class="value__check">
+              <svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>
+            </div>
+            <div class="value__text">
+              <strong>Commission négociée au cas par cas</strong>
+              <p>Chaque chantier est différent. Votre commission est définie avec vous avant toute mise en relation — pas de surprise.</p>
+            </div>
+          </li>
+          <li class="value__item">
+            <div class="value__check">
+              <svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>
+            </div>
+            <div class="value__text">
+              <strong>Contrat d'apporteur signé avant chaque deal</strong>
+              <p>Juridiquement encadré, votre rémunération est protégée dès la mise en relation. Aucun deal sans contrat.</p>
+            </div>
+          </li>
+          <li class="value__item">
+            <div class="value__check">
+              <svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>
+            </div>
+            <div class="value__text">
+              <strong>Versement à la signature du chantier</strong>
+              <p>Pas d'attente de fin de chantier. Votre commission est déclenchée dès la signature du contrat de travaux.</p>
+            </div>
+          </li>
+          <li class="value__item">
+            <div class="value__check">
+              <svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>
+            </div>
+            <div class="value__text">
+              <strong>Aucun investissement de votre part</strong>
+              <p>Pas de capital, pas de stock, pas de personnel. Vous apportez une opportunité — c'est tout ce qu'on vous demande.</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <div class="value__visual">
+        <p class="body-s" style="margin-bottom: 1rem; text-transform: uppercase; letter-spacing: 0.06em; font-weight: 600; color: var(--ink-400);">Exemples de commissions</p>
+        <div class="commission-box">
+          <div class="commission-box__label">Second œuvre · Rénovation appartement</div>
+          <div class="commission-box__range">Selon <span>volume du chantier</span></div>
+          <div class="commission-box__sub">Chantier 20 k€ à 80 k€ — commission variable</div>
+        </div>
+        <div class="commission-box">
+          <div class="commission-box__label">Rénovation énergétique · Maison individuelle</div>
+          <div class="commission-box__range">Selon <span>prestations retenues</span></div>
+          <div class="commission-box__sub">ITE, PAC, menuiseries — primes CEE incluses</div>
+        </div>
+        <div class="commission-box">
+          <div class="commission-box__label">Réhabilitation · Immeuble collectif</div>
+          <div class="commission-box__range">Négocié <span>au dossier</span></div>
+          <div class="commission-box__sub">Chantiers > 200 k€ — commissions significatives</div>
+        </div>
+        <p class="body-s" style="margin-top: 1rem; color: var(--ink-400);">Les montants sont définis contractuellement avant chaque mise en relation.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════ PROFILS ═══════════ -->
+<section class="section section--bg" id="profils">
+  <div class="wrap">
+    <div class="section__head section__head--center">
+      <span class="eyebrow">Qui peut candidater</span>
+      <h2 class="display-l" style="margin-top: 0.75rem;">Le profil qu'on recherche</h2>
+      <p class="lede">Pas besoin d'être du métier. Il faut être sérieux, organisé, et avoir accès à des contacts qui ont des besoins de travaux.</p>
+    </div>
+    <div class="profiles__grid">
+      <div class="profile-card">
+        <div class="profile-card__icon">🏘️</div>
+        <h3>Agents immobiliers & mandataires</h3>
+        <p>Vous croisez quotidiennement des propriétaires qui rénovent avant de vendre ou d'acheter. C'est un flux naturel.</p>
+      </div>
+      <div class="profile-card">
+        <div class="profile-card__icon">🏦</div>
+        <h3>Courtiers & conseillers patrimoniaux</h3>
+        <p>Vos clients investisseurs ont souvent des projets de rénovation locative ou de mise aux normes.</p>
+      </div>
+      <div class="profile-card">
+        <div class="profile-card__icon">📋</div>
+        <h3>Gestionnaires de copropriétés</h3>
+        <p>Vous pilotez des assemblées générales où les travaux sont au cœur des décisions. Position stratégique.</p>
+      </div>
+      <div class="profile-card">
+        <div class="profile-card__icon">🤝</div>
+        <h3>Commerciaux & indépendants</h3>
+        <p>Vous avez un réseau de décideurs — chefs d'entreprise, bailleurs, promoteurs — qui lancent régulièrement des chantiers.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════ FAQ ═══════════ -->
+<section class="section" id="faq">
+  <div class="wrap-sm">
+    <div class="section__head section__head--center">
+      <span class="eyebrow">Questions</span>
+      <h2 class="display-l" style="margin-top: 0.75rem;">Ce qu'on nous demande souvent</h2>
+    </div>
+    <ul class="faq__list">
+      <li class="faq__item">
+        <button class="faq__q" aria-expanded="false">
+          Est-ce que l'apport d'affaires BTP est légal en France ?
+          <svg class="faq__arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+        </button>
+        <div class="faq__a">Totalement. L'apport d'affaires est un contrat commercial encadré par le Code civil. Il n'existe pas de réglementation spécifique au BTP qui l'interdirait — contrairement à l'immobilier (loi Hoguet), le BTP est plus souple. Chaque mise en relation est formalisée par un contrat d'apporteur d'affaires signé en amont.</div>
+      </li>
+      <li class="faq__item">
+        <button class="faq__q" aria-expanded="false">
+          Je n'ai aucune expérience dans le BTP. Est-ce un problème ?
+          <svg class="faq__arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+        </button>
+        <div class="faq__a">Non. Votre rôle est d'identifier des besoins de travaux et de les transmettre — pas de chiffrer ou de réaliser les chantiers. La qualification technique est assurée par nos entreprises partenaires. Ce qui compte : votre réseau, votre sérieux, et votre capacité à détecter une opportunité.</div>
+      </li>
+      <li class="faq__item">
+        <button class="faq__q" aria-expanded="false">
+          Comment sont fixées les commissions ?
+          <svg class="faq__arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+        </button>
+        <div class="faq__a">Les commissions sont définies au cas par cas, selon la nature et le volume du chantier apporté. Elles sont fixées par écrit dans le contrat d'apporteur d'affaires avant toute mise en relation. Aucun deal n'est traité sans accord préalable sur la rémunération.</div>
+      </li>
+      <li class="faq__item">
+        <button class="faq__q" aria-expanded="false">
+          Quand est-ce que je suis payé ?
+          <svg class="faq__arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+        </button>
+        <div class="faq__a">Votre commission est déclenchée à la signature du contrat de travaux entre l'entreprise partenaire et le client. Vous n'avez pas à attendre la fin du chantier. Les modalités de versement (date, virement) sont définies dans votre contrat d'apporteur.</div>
+      </li>
+      <li class="faq__item">
+        <button class="faq__q" aria-expanded="false">
+          Dois-je créer une structure (auto-entrepreneur, société) ?
+          <svg class="faq__arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+        </button>
+        <div class="faq__a">Pour percevoir une commission de façon régulière et déclarer vos revenus, une structure juridique (auto-entrepreneur ou société) est fortement recommandée. Vous pouvez candidater en tant que particulier et formaliser votre situation avant le premier deal — nous vous accompagnons dans cette démarche.</div>
+      </li>
+      <li class="faq__item">
+        <button class="faq__q" aria-expanded="false">
+          Pourquoi candidater plutôt que de démarcher des entreprises BTP directement ?
+          <svg class="faq__arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+        </button>
+        <div class="faq__a">Parce que sans réseau préétabli, les entreprises BTP ne savent pas qui vous êtes et ne vont pas payer une commission sans contrat solide. Cohesif Access vous donne accès à des partenaires déjà sélectionnés, habitués à travailler avec des apporteurs, avec des process clairs et des contrats standards — ce qui élimine la friction et sécurise votre rémunération.</div>
+      </li>
+    </ul>
+  </div>
+</section>
+
+<!-- ═══════════ CTA FINAL ═══════════ -->
+<section class="final" id="close">
+  <div class="wrap">
+    <div class="final__inner">
+      <span class="eyebrow" style="color: rgba(255,255,255,0.5); margin-bottom: 1.25rem; display: inline-flex;">— Candidature BTP</span>
+      <h2 class="display-l final__title">Vous avez les contacts.<br>On a les chantiers.</h2>
+      <p class="final__sub">Si vous êtes sérieux et que vous avez accès à des porteurs de projets de travaux, votre place est dans le réseau. La candidature prend 3 minutes.</p>
+      <div class="final__actions">
+        <button class="btn btn--btp btn--lg" id="final-cta">Déposer ma candidature →</button>
+        <a href="mailto:cohesifaccess@gmail.com?subject=Cohesif%20Access%20BTP%20—%20Renseignement" class="btn btn--ghost btn--lg" style="color: rgba(255,255,255,0.8); border-color: rgba(255,255,255,0.2);">Une question d'abord</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ═══════════ FOOTER ═══════════ -->
+<footer class="foot" role="contentinfo">
+  <div class="wrap">
+    <div class="foot__grid">
+      <div class="foot__brand">
+        <a href="/" class="brand">
+          <img src="logo.png" alt="Cohesif Access" class="brand__logo" />
+        </a>
+        <p>Réseau privé d'apporteurs d'affaires — Immobilier & BTP.<br>Fondé par Thomas Hoenig · Paris 15e</p>
+      </div>
+      <div class="foot__col">
+        <h4>Réseau</h4>
+        <ul>
+          <li><a href="/">Pôle Immobilier</a></li>
+          <li><a href="/btp.html">Pôle BTP</a></li>
+          <li><a href="mailto:cohesifaccess@gmail.com?subject=Partenariat%20BTP">Partenariat entreprise</a></li>
+        </ul>
+      </div>
+      <div class="foot__col">
+        <h4>Contact</h4>
+        <ul>
+          <li><a href="mailto:cohesifaccess@gmail.com">cohesifaccess@gmail.com</a></li>
+          <li><a href="tel:+33760903774">07 60 90 37 74</a></li>
+          <li><a href="https://www.linkedin.com/in/thomas-hoenig-b68427298" target="_blank" rel="noopener">LinkedIn</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot__bottom">
+      <span class="foot__copy">© 2025 Cohesif Access · Groupe Cohesif · Tous droits réservés</span>
+      <nav class="foot__legal" aria-label="Liens légaux">
+        <a href="javascript:void(0)" onclick="openLegal('mentions')">Mentions légales</a>
+        <a href="javascript:void(0)" onclick="openLegal('cgv')">CGV</a>
+        <a href="javascript:void(0)" onclick="openLegal('confidentialite')">Confidentialité</a>
+      </nav>
+    </div>
+  </div>
+</footer>
+
+<!-- ═══════════ MODAL CANDIDATURE BTP ═══════════ -->
+<div class="modal-overlay" id="modal-btp" role="dialog" aria-modal="true" aria-labelledby="modal-btp-title">
+  <div class="modal">
+    <button class="modal__close" onclick="closeModal('modal-btp')" aria-label="Fermer">
+      <svg width="14" height="14" viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="2"><line x1="1" y1="1" x2="13" y2="13"/><line x1="13" y1="1" x2="1" y2="13"/></svg>
+    </button>
+    <div class="modal__eyebrow">Candidature BTP · Réseau Cohesif Access</div>
+    <h3 class="modal__title" id="modal-btp-title">Rejoindre le pôle BTP</h3>
+    <p class="modal__sub">Remplissez ce formulaire. <strong>Sélection manuelle sous 48 h.</strong> Si votre profil correspond, nous vous recontactons pour un échange de qualification.</p>
+    <form id="btp-form" onsubmit="handleBtpSubmit(event)">
+      <div class="form-grid">
+        <div class="form-group">
+          <label for="btp-firstname">Prénom *</label>
+          <input type="text" id="btp-firstname" name="firstname" required autocomplete="given-name" />
+        </div>
+        <div class="form-group">
+          <label for="btp-lastname">Nom *</label>
+          <input type="text" id="btp-lastname" name="lastname" required autocomplete="family-name" />
+        </div>
+        <div class="form-group">
+          <label for="btp-email">Email *</label>
+          <input type="email" id="btp-email" name="email" required placeholder="vous@exemple.com" autocomplete="email" />
+        </div>
+        <div class="form-group">
+          <label for="btp-phone">Téléphone *</label>
+          <input type="tel" id="btp-phone" name="phone" required placeholder="06 ..." autocomplete="tel" />
+        </div>
+        <div class="form-group">
+          <label for="btp-city">Ville *</label>
+          <input type="text" id="btp-city" name="city" required placeholder="Paris, Lyon, ..." />
+        </div>
+        <div class="form-group">
+          <label for="btp-situation">Situation actuelle *</label>
+          <select id="btp-situation" name="situation" required>
+            <option value="" disabled selected>Choisir…</option>
+            <option value="salarie">Salarié</option>
+            <option value="auto-entrepreneur">Auto-entrepreneur</option>
+            <option value="dirigeant">Dirigeant / Gérant</option>
+            <option value="agent-immo">Agent / Mandataire immobilier</option>
+            <option value="courtier">Courtier / Conseiller patrimonial</option>
+            <option value="syndic">Gestionnaire de copropriété</option>
+            <option value="autre">Autre</option>
+          </select>
+        </div>
+        <div class="form-group form-group--full">
+          <label for="btp-secteur">Secteur BTP d'intérêt *</label>
+          <select id="btp-secteur" name="secteur" required>
+            <option value="" disabled selected>Choisir…</option>
+            <option value="gros-oeuvre">Gros œuvre / Maçonnerie</option>
+            <option value="second-oeuvre">Second œuvre (élec, plomberie, menuiserie…)</option>
+            <option value="renovation-energetique">Rénovation énergétique</option>
+            <option value="rehabilitation">Réhabilitation d'immeubles</option>
+            <option value="maintenance">Maintenance & Entretien</option>
+            <option value="industriel">Marchés industriels</option>
+            <option value="tous">Tous secteurs</option>
+          </select>
+        </div>
+        <div class="form-group form-group--full">
+          <label for="btp-motivation">Votre situation & ce que vous pouvez apporter *</label>
+          <textarea id="btp-motivation" name="motivation" required placeholder="Décrivez votre réseau, les types de contacts que vous avez, et pourquoi vous souhaitez rejoindre le réseau BTP (2-3 phrases)."></textarea>
+        </div>
+      </div>
+      <div class="form-cgv">
+        <input type="checkbox" id="btp-cgv" name="cgv" required />
+        <label for="btp-cgv">J'accepte que mes données soient utilisées pour traiter ma candidature, conformément à la <a href="javascript:void(0)" onclick="openLegal('confidentialite')">politique de confidentialité</a>.</label>
+      </div>
+      <button type="submit" class="btn btn--btp form-submit">Envoyer ma candidature →</button>
+    </form>
+  </div>
+</div>
+
+<!-- ═══════════ MODAL CONFIRMATION ═══════════ -->
+<div class="modal-overlay" id="modal-confirm-btp" role="dialog" aria-modal="true">
+  <div class="modal modal--confirm">
+    <button class="modal__close" onclick="closeModal('modal-confirm-btp')" aria-label="Fermer">
+      <svg width="14" height="14" viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="2"><line x1="1" y1="1" x2="13" y2="13"/><line x1="13" y1="1" x2="1" y2="13"/></svg>
+    </button>
+    <div class="modal__icon">✅</div>
+    <h3>Candidature reçue</h3>
+    <p>Votre dossier est entre les mains de Thomas Hoenig. Vous recevrez une réponse sous <strong>48 h</strong> à l'adresse indiquée.</p>
+    <button class="btn btn--btp" onclick="closeModal('modal-confirm-btp')">Fermer</button>
+  </div>
+</div>
+
+<!-- ═══════════ COOKIE ═══════════ -->
+<div class="cookie" id="cookie" role="dialog" aria-label="Consentement cookies">
+  <p>Ce site utilise des cookies essentiels au fonctionnement du formulaire.</p>
+  <button class="cookie__accept" onclick="acceptCookie()">Accepter</button>
+</div>
+
+<script>
+/* ── Config ── */
+const BTP_CONFIG = {
+  contactEmail: 'cohesifaccess@gmail.com',
+  formEndpoint: '', /* Remplacer par un endpoint Formspree dédié BTP si souhaité */
+};
+
+/* ── Nav scroll ── */
+const nav = document.getElementById('nav');
+window.addEventListener('scroll', () => {
+  nav.classList.toggle('scrolled', window.scrollY > 20);
+}, { passive: true });
+
+/* ── Modal helpers ── */
+function openModal(id) {
+  const el = document.getElementById(id);
+  if (el) { el.classList.add('open'); document.body.style.overflow = 'hidden'; }
+}
+function closeModal(id) {
+  const el = document.getElementById(id);
+  if (el) { el.classList.remove('open'); document.body.style.overflow = ''; }
+}
+
+/* ── CTAs → modal ── */
+['nav-cta', 'hero-cta', 'final-cta'].forEach(id => {
+  const btn = document.getElementById(id);
+  if (btn) btn.addEventListener('click', () => openModal('modal-btp'));
+});
+
+/* ── Close on backdrop click ── */
+document.querySelectorAll('.modal-overlay').forEach(overlay => {
+  overlay.addEventListener('click', e => {
+    if (e.target === overlay) closeModal(overlay.id);
+  });
+});
+
+/* ── Escape key ── */
+document.addEventListener('keydown', e => {
+  if (e.key === 'Escape') {
+    document.querySelectorAll('.modal-overlay.open').forEach(el => closeModal(el.id));
+  }
+});
+
+/* ── FAQ accordion ── */
+document.querySelectorAll('.faq__q').forEach(btn => {
+  btn.addEventListener('click', () => {
+    const item = btn.closest('.faq__item');
+    const isOpen = item.classList.contains('open');
+    document.querySelectorAll('.faq__item.open').forEach(i => i.classList.remove('open'));
+    if (!isOpen) item.classList.add('open');
+    btn.setAttribute('aria-expanded', !isOpen);
+  });
+});
+
+/* ── Cookie ── */
+function acceptCookie() {
+  localStorage.setItem('ca_btp_cookie', '1');
+  document.getElementById('cookie').style.display = 'none';
+}
+if (!localStorage.getItem('ca_btp_cookie')) {
+  document.getElementById('cookie').style.display = 'flex';
+}
+
+/* ── Legal placeholder ── */
+function openLegal(type) {
+  alert('Document légal en cours de publication. Contact : cohesifaccess@gmail.com');
+}
+
+/* ── Form submit ── */
+async function handleBtpSubmit(e) {
+  e.preventDefault();
+  const form = document.getElementById('btp-form');
+  const btn = form.querySelector('button[type="submit"]');
+  btn.disabled = true;
+  btn.textContent = 'Envoi en cours…';
+
+  const data = {
+    prenom: document.getElementById('btp-firstname').value.trim(),
+    nom: document.getElementById('btp-lastname').value.trim(),
+    email: document.getElementById('btp-email').value.trim(),
+    telephone: document.getElementById('btp-phone').value.trim(),
+    ville: document.getElementById('btp-city').value.trim(),
+    situation: document.getElementById('btp-situation').value,
+    secteur: document.getElementById('btp-secteur').value,
+    motivation: document.getElementById('btp-motivation').value.trim(),
+    source: 'Cohesif Access — Pôle BTP',
+  };
+
+  let sent = false;
+
+  if (BTP_CONFIG.formEndpoint) {
+    try {
+      const r = await fetch(BTP_CONFIG.formEndpoint, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
+        body: JSON.stringify(data),
+      });
+      if (r.ok) sent = true;
+    } catch (_) {}
+  }
+
+  if (!sent) {
+    /* Fallback mailto */
+    const body = [
+      `Prénom : ${data.prenom}`,
+      `Nom : ${data.nom}`,
+      `Email : ${data.email}`,
+      `Téléphone : ${data.telephone}`,
+      `Ville : ${data.ville}`,
+      `Situation : ${data.situation}`,
+      `Secteur BTP : ${data.secteur}`,
+      `Motivation : ${data.motivation}`,
+    ].join('%0A');
+    const subject = encodeURIComponent(`[BTP] Candidature — ${data.prenom} ${data.nom}`);
+    window.location.href = `mailto:${BTP_CONFIG.contactEmail}?subject=${subject}&body=${body}`;
+  }
+
+  closeModal('modal-btp');
+  openModal('modal-confirm-btp');
+  form.reset();
+  btn.disabled = false;
+  btn.textContent = 'Envoyer ma candidature →';
+}
+</script>
+</body>
+</html>
